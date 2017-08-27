@@ -1,5 +1,5 @@
 
-var EDGE_CONTRIBUTORS = '/contributors', EDGE_LANGUAGES = '/languages', TOKEN='45280929b0328baf43c3bd2a4e7d98e7cfdf432b';
+var EDGE_CONTRIBUTORS = '/contributors', EDGE_LANGUAGES = '/languages', TOKEN='0af9ba4d5892aec68b0dd262c66c6054bc4712c2';
 
 jQuery.fn.extend({
 	loadtopteam: function(){
