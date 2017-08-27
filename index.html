@@ -45,7 +45,7 @@
       <h2 class="header">Our Goals</h2>
       <div class="row">
         <div class="col s12 m12 l3">
-          <div class="card hoverable">
+          <div class="card small valign-wrapper hoverable">
             <div class="card-content">
               <h5 class="card-title">Open Source</h5>
               <p class="flow-text" style="text-align: justify;">
@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="col s12 m12 l3">
-          <div class="card hoverable">
+          <div class="card small valign-wrapper hoverable">
             <div class="card-content">
               <h5 class="card-title">Improving</h5>
               <p class="flow-text">Learning and improving our skills regularly is a necessity in this fast world.</p>
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="col s12 m12 l3">
-          <div class="card hoverable">
+          <div class="card small valign-wrapper hoverable">
             <div class="card-content">
               <h5 class="card-title">Lorem Ipsum</h5>
               <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -76,13 +76,27 @@
 </div>
 <div class="parallax-container">
   <div class="parallax">
-    <img src="/assets/media/banner_2.jpg" alt="">
+    <img src="/assets/media/banner_1.jpg" alt="">
   </div>
 </div>
 <div class="section white">
   <div class="container">
     <h2 class="header">Our Team</h2>
     <div class="row" id="team">
+      
+    </div>
+    <a class="btn" href="#">Full Team</a>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="/assets/media/banner_2.jpg" alt="">
+  </div>
+</div>
+<div class="section white">
+  <div class="container">
+    <h2 class="header">Our Projects</h2>
+    <div class="row" id="projects">
       
     </div>
   </div>
@@ -96,6 +110,7 @@
     $(document).ready(function(){
         $('.parallax').parallax();
         $("#team").loadtopteam();
+        $("#projects").loadprojects();
       });
       
     </script>
