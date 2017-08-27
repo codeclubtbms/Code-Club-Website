@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code Club TBMS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <nav>
+    <div class="nav-wrapper  blue-grey darken-2">
+      <a href="#!" class="brand-logo center">Code Club TBMS</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li class="active"><a href="/">Home</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+    
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/assets/media/banner_1.jpg" alt="">
+      </div>
+    </div>
+    <div class="section white">
+   <div class="container">
+     <h2 class="header">Code Club TBMS</h2>
+     <p class="grey-text text-darken-3 lighten-3">Established in 2017, the Code Club 2017 focuses on ....</p>
+     <p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     <img src="/assets/media/banner_1.jpg" alt="" width="50%;">
+   </div>
+ </div>
+ <div class="parallax-container">
+   <div class="parallax">
+     <img src="/assets/media/banner_2.jpg" alt="">
+   </div>
+ </div>
+ <div class="section white">
+    <div class="container">
+      <h2 class="header">Our Goals</h2>
+      <div class="row">
+        <div class="col s12 m12 l3">
+          <div class="card hoverable">
+            <div class="card-content">
+              <h5 class="card-title">Open Source</h5>
+              <p class="flow-text" style="text-align: justify;">
+              We believe in keeping our projects open source, so that eveyone is involved, shairng and learing along the way.
+              </p>  
+            </div>
+            
+          </div>
+        </div>
+        <div class="col s12 m12 l3">
+          <div class="card hoverable">
+            <div class="card-content">
+              <h5 class="card-title">Improving</h5>
+              <p class="flow-text">Learning and improving our skills regularly is a necessity in this fast world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l3">
+          <div class="card hoverable">
+            <div class="card-content">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="/assets/media/banner_2.jpg" alt="">
+  </div>
+</div>
+<div class="section white">
+  <div class="container">
+    <h2 class="header">Our Team</h2>
+    <div class="row" id="team">
+      
+    </div>
+  </div>
+</div>
+    <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="/assets/js/popper.min.js" charset="utf-8"></script>
+    <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
+    <script src="/assets/js/materialize.min.js" charset="utf-8"></script>
+    <script src="/assets/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.parallax').parallax();
+        $("#team").loadtopteam();
+      });
+      
+    </script>
+  </body>
+</html>

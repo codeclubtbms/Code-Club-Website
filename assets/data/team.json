@@ -1,0 +1,46 @@
+{
+  "members":[
+    {
+      "name":"Haider Ali Punjabi",
+      "description":"Static Website, Android Apps, RESTful API Developer",
+      "joined_year":"2017",
+      "school":"Tyndale Biscoe School",
+      "roles": {
+        "Head":"2017"
+      },
+      "social": 
+        {
+          "facebook": "haiderali176",
+          "instagram":"haideralipunjabi",
+          "github":"haideralipunjabi",
+          "500px":"haideralipunjabi",
+          "website":"https://hackesta.org"
+        },
+        "image_url": "https://hackesta.org/assets/media/profile.png",
+        "senior": true
+    },
+    {
+      "name":"Areeb Beigh",
+      "description":"Python Developer",
+      "joined_year":"2017",
+      "school":"Tyndale Biscoe School",
+      "social":{
+        
+      },
+      "image_url": "https://avatars3.githubusercontent.com/u/15276828?v=4",
+
+      "senior":true
+    },
+    {
+      "name":"Mir Immad",
+      "description":"Python Developer",
+      "joined_year":"2017",
+      "school":"Tyndale Biscoe School",
+      "social":{
+        
+      },
+      "image_url": "https://avatars2.githubusercontent.com/u/18097348?v=4",
+      "senior":true
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+/* ---------------
+
+name: Clean Google Calendar
+author: @Gambloide
+version: 1.0
+
+------------------ */
+
+/* Calendar */
+
+.tg-time-pri,
+.tg-time-sec,
+.tg-times-pri,
+.tg-times-sec,
+.mask-top,
+.mask-left,
+.mask-bottom,
+.mask-right,
+.chip dl,
+#weekViewAllDayBgwk,
+.wbkt .tg-timedevents,
+#searchAddCal,
+.st-c-pos div,
+.st-bg,
+.wk-allday .st-bg-next,
+.wk-allday .st-bg-today,
+.wk-allday .st-bg-td-first,
+.wk-allday .st-bg-td-last,
+.wk-dayname.wk-today,
+.wk-dayname.wk-tomorrow,
+#vr-nav {
+    border-color: transparent !important;
+}
+.st-c {
+    height: 1.5rem;
+}
+.st-c .te,
+.st-c .rb-n {
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+}
+.chip dl,
+.calListLabelOuter {
+    border-radius: 0.2rem;
+    min-height: 1.45rem;
+}
+.chip-color {
+    border-radius: 0.3rem;
+}
+.mask-top,
+.mask-left,
+.mask-bottom,
+.mask-right,
+.wk-dayname.wk-today,
+.wk-allday .st-bg-today {
+    background-color: transparent !important;
+}
+.tg-col {
+    border-left: 1px solid #F9F9F9;
+}
+.clstMenu,
+.calListSquare,
+.calListImg-stale,
+.calListImg-sel,
+.calListImg-hvr,
+.calListImg-opn {
+    border-color: white !important;
+    border-radius: 100%;
+}
+.calListLabel div {
+    background-color: #EAEAEA !important;
+}
+#calcontent.eui-t .calListRow,
+.goog-zippy-expanded .monthtableBody {
+    margin-top: 0.85rem;
+}
+.dp-monthtable.monthtableBody tbody tr {
+    height: 1.5rem;
+}
+.goog-zippy-expanded .monthtableBody {
+    padding-right: 0.2rem;
+    padding-left: 0;
+}
+.chromeColor.goog-zippy-content {
+    margin-left: -0.8rem
+}
+.calListLabelOuter:hover {
+    background: #F7F7F7 !important;
+}
+.chip dd,
+.chip dt {
+    padding: 5px 5px 0px 5px;
+}
+.tg-col-eventwrapper {
+    padding-left: 0.73rem;
+}
+
+/* Settings */
+
+input,
+textarea,
+select {
+    background-color: #F7F7F7;
+    border-color: transparent;
+    border-radius: 0.15rem;
+}
