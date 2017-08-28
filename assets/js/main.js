@@ -1,5 +1,5 @@
 
-var EDGE_CONTRIBUTORS = '/contributors', EDGE_LANGUAGES = '/languages', TOKEN='0af9ba4d5892aec68b0dd262c66c6054bc4712c2';
+var EDGE_CONTRIBUTORS = '/contributors', EDGE_LANGUAGES = '/languages', TOKEN='0fd2b5dcefa201400f4376d0c7aa86d72f3ac5c8';
 
 jQuery.fn.extend({
 	loadtopteam: function(){
@@ -26,8 +26,7 @@ $container.append($card);
 	loadprojects: function(){
 		var $container = $(this);
 		$.ajax({
-      url: 		'https://api.github.com/orgs/codeclubtbms/repos?access_token='+TOKEN,
-      type: 'GET',
+      url: 		'https://hackesta.pythonanywhere.com/github/orgs/codeclubtbms/repos',
       crossDomain: true,
       dataType: 'json',
       success: function(myData) {
@@ -66,7 +65,7 @@ $container.append($card);
 
 function getContributors(url,success){
 	$.ajax({
-		url: 		url + '?access_token='+TOKEN,
+		url: 		url.replace("api.github.com","hackesta.pythonanywhere.com/github"),
 		type: 'GET',
 		crossDomain: true,
 		dataType: 'json',
