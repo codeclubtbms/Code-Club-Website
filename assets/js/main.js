@@ -8,6 +8,13 @@ jQuery.fn.extend({
 		$.getJSON("/assets/data/team.json", function(json){
 			$.each(json.members, function(index, val) {
 				if(val.senior){
+					var sociallinks = "";
+					wSocial = 100 / Object.keys(val.social).length;
+					$.each(val.social, function(key, val) {
+						
+						sociallinks += '<a class="fa '+json.social_links[key].fa_icon+'" style="width:'+wSocial+'%" href="'+json.social_links[key].prefix + val+'"></a>';
+					});
+					console.log(sociallinks);
 					$card = $('<div class="col-lg-4 col-md-6 col-12">'+
 	          '<div class="card medium hoverable team_card">'+
 	            '<div class="card-content center-align">'+
@@ -15,6 +22,8 @@ jQuery.fn.extend({
 	              '<h5>'+val.name+'</h5>'+
 								'<p>'+val.description+'</p>'+
 	           '</div>'+
+						 '<div class="card-action">'+
+						 sociallinks+
 	         '</div>'+
 	        '</div>');
 					console.log($card);
@@ -23,7 +32,8 @@ $container.append($card);
 				});
 		});
 	},
-	loadprojects: function(){
+	loadprojects: function(loadAll){
+		console.log(loadAll);
 		var $container = $(this);
 		$.ajax({
       url: 		'https://hackesta.pythonanywhere.com/github/orgs/codeclubtbms/repos',
@@ -31,7 +41,7 @@ $container.append($card);
       dataType: 'json',
       success: function(myData) {
     		$.each(myData, function(index, repository) {
-					if(index < 8) {
+					if(index < 8 || loadAll) {
 						var contributors, contrib_images = ''	;
 						getContributors(repository.contributors_url, function(contribData){
 							contributors = contribData;
@@ -60,6 +70,21 @@ $container.append($card);
     		});
       }
     });
+	},
+	loadallteam: function(){
+		$container = this;
+		$.getJSON("/assets/data/team.json", function(json){
+			$.each(json.members, function(index, val) {
+			var sociallinks =""
+				$.each(val.social, function(key, val) {
+					
+					sociallinks += '<a class="fa '+json.social_links[key].fa_icon+'" href="'+json.social_links[key].prefix + val+'"></a>';
+				});
+				console.log(sociallinks);
+					$tr = $('<tr><td>'+val.name+'</td><td>'+val.joined_year+'</td><td>'+val.roles+'</td><td>'+sociallinks+'</td></tr>');
+$container.append($tr);
+				});
+		});
 	}
 });
 

@@ -1,3 +1,18 @@
 .team_card img{
 height: 50%;
 }
+.team_card>.card-action>.fa {
+  color: #607d8b !important;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 0 !important;
+}
+#team_table .fa {
+  padding-right: 10px;
+  font-size: 20px;
+  color: #607d8b !important;
+
+}
+#team_table .fa:hover {
+  text-decoration: none;
+}

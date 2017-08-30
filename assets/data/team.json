@@ -2,12 +2,10 @@
   "members":[
     {
       "name":"Haider Ali Punjabi",
-      "description":"Static Website, Android Apps, RESTful API Developer",
+      "description":"Static Websites, Android Apps, RESTful API Developer",
       "joined_year":"2017",
       "school":"Tyndale Biscoe School",
-      "roles": {
-        "Head":"2017"
-      },
+      "roles": "Head(2017)",
       "social": 
         {
           "facebook": "haiderali176",
@@ -21,11 +19,14 @@
     },
     {
       "name":"Areeb Beigh",
-      "description":"Python Developer",
+      "description":"Android, Django, Python Developer",
       "joined_year":"2017",
       "school":"Tyndale Biscoe School",
+      "roles":"",
       "social":{
-        
+        "instagram": "areebbeigh",
+        "github":"areebbeigh",
+        "website":"http://areebbeigh.tk"
       },
       "image_url": "https://avatars3.githubusercontent.com/u/15276828?v=4",
 
@@ -33,14 +34,69 @@
     },
     {
       "name":"Mir Immad",
-      "description":"Python Developer",
+      "description":"Programmerr",
       "joined_year":"2017",
       "school":"Tyndale Biscoe School",
+      "roles":"",
       "social":{
-        
+        "facebook":"immadmir1",
+        "github":"mirimmad",
+        "quora":"Mir-Immad"
       },
       "image_url": "https://avatars2.githubusercontent.com/u/18097348?v=4",
       "senior":true
+    },
+    {
+      "name":"Tawab-ul-Gani",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Tyndale Biscoe School",
+      "social":{
+        "facebook":"tawabul.gani",
+        "instagram":"gani_tawab"
+      }
+    },
+    {
+      "name":"Sumaid Pal Singh",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Tyndale Biscoe School",
+      "social":{
+        "instagram":"sumaid_singh"
+      }
     }
-  ]
+  ],
+  "social_links":{
+    "facebook":{
+      "fa_icon":"fa-facebook",
+      "prefix":"https://www.facebook.com/"
+        },
+    "twitter":{
+      "fa_icon":"fa-twitter",
+      "prefix":"https://twitter.com/"
+    },
+    "instagram":{
+      "fa_icon":"fa-instagram",
+      "prefix":"https://instagram.com/"
+    },
+    "github":{
+      "fa_icon":"fa-github",
+      "prefix":"https://github.com/"
+    },
+    "500px":{
+      "fa_icon":"fa-500px",
+      "prefix":"https://500px.com/"
+    },
+    "quora":{
+      "fa_icon":"fa-quora",
+      "prefix":"https://quora.com/profile/"
+    },
+    "website":{
+      "fa_icon":"fa-globe",
+      "prefix":""
+    }
+    
+  }
+    
+  
 }
