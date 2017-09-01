@@ -2,6 +2,7 @@
 var EDGE_CONTRIBUTORS = '/contributors', EDGE_LANGUAGES = '/languages', TOKEN='0fd2b5dcefa201400f4376d0c7aa86d72f3ac5c8';
 
 jQuery.fn.extend({
+	//Used to load featured team members in index.html
 	loadtopteam: function(){
 		var $container = $(this);
 
@@ -32,8 +33,8 @@ $container.append($card);
 				});
 		});
 	},
+	//Used to load projects 
 	loadprojects: function(loadAll){
-		console.log(loadAll);
 		var $container = $(this);
 		$.ajax({
       url: 		'https://hackesta.pythonanywhere.com/github/orgs/codeclubtbms/repos',
@@ -41,7 +42,7 @@ $container.append($card);
       dataType: 'json',
       success: function(myData) {
     		$.each(myData, function(index, repository) {
-					if(index < 8 || loadAll) {
+					if(index <= 8 || loadAll) {
 						var contributors, contrib_images = ''	;
 						getContributors(repository.contributors_url, function(contribData){
 							contributors = contribData;
@@ -50,18 +51,24 @@ $container.append($card);
 
 							});
 							
-								$card = $('<div class="col-lg-3 col-md-4 col-12">'+
-									'<div onclick="window.location.href=\''+ repository.html_url+'\'" class="card small hoverable project_card valign-wrapper">'+
-										'<div class="card-content center-align">'+
-											'<h5>'+repository.name+'</h5>'+
-											'<p style="margin-bottom: 10px;">'+repository.description+'</p>'+
-											contrib_images+			
-											'<div class="card-action">'+
-											'<p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">update</i>'+(new Date(repository.updated_at)).toLocaleString()+'</p>'+
-											'</div>'+								
-									 '</div>'+
-								 '</div>'+
-								'</div>');
+								$card = $(
+									'<div class="col-lg-3 col-md-4 col-12">'+
+										'<div class="card small hoverable project_card valign-wrapper">'+
+											'<div class="card-content center-align">'+
+												'<h5 class="activator">'+repository.name+'</h5>'+
+												'<p style="margin-bottom: 10px;">'+((repository.description === null) ? "" : repository.description)+'</p>'+
+												contrib_images+
+												'<div class="card-action">'+
+												'<a href="'+repository.html_url+'" target="_blank" style="font-size: 1.64em;"><i class="fa fa-github" style="margin-right:10px;"></i>View Code</a><i class="material-icons activator right">more_vert</i>'			+	
+												'</div>'+				
+														
+									 		'</div>'+
+									 		'<div class="card-reveal">'+
+									 			' <span class="card-title grey-text text-darken-4">'+repository.name+'<i class="material-icons right">close</i></span>'+
+									 			'<span class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">update</i> Updated At: '+(new Date(repository.updated_at)).toLocaleString()+'</span>'+
+									 		'</div>'+	
+								 		'</div>'+
+									'</div>');
 								
 								$container.append($card);	
 						});
