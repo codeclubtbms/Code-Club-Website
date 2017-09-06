@@ -32,6 +32,7 @@
 
       "senior":true
     },
+  
     {
       "name":"Mir Immad",
       "description":"Programmerr",
@@ -45,6 +46,18 @@
       },
       "image_url": "https://avatars2.githubusercontent.com/u/18097348?v=4",
       "senior":true
+    },
+    {
+      "name":"Mohammad Shahdad",
+      "joined_year":"2017",
+      "school":"Tyndale Biscoe School",
+      "roles":"",
+      "social":{
+        "facebook":"mohammad.shahdad",
+        "instagram":"mohammadshahdad",
+        "github":"mohammadshahdad",
+        "twitter":"moshahdad"
+      }
     },
     {
       "name":"Tawab-ul-Gani",
