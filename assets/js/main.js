@@ -1,7 +1,7 @@
 var EDGE_CONTRIBUTORS = '/stats/contributors',
   EDGE_LANGUAGES = '/languages',
   TOKEN = '0fd2b5dcefa201400f4376d0c7aa86d72f3ac5c8';
-
+  
 jQuery.fn.extend({
   //Used to load featured team members in index.html
   loadtopteam: function() {
@@ -49,7 +49,7 @@ jQuery.fn.extend({
               console.log(contributors);
               $.each(contributors, function(index, contributor) {
                 if (index < 3) {
-                  contrib_images += '<a href="' +contributor.author.html_url + '" target="_blank"><div class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img>' + contributor.author.login + '</div></a>';
+                  contrib_images += '<a href="' +contributor.author.html_url + '" target="_blank"><div class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img><span class="contributor_name">' + contributor.author.login + '</span><span class="contributions">'+getStats(contributor.weeks)+'</span>'+'</div></a>';
               //  contrib_images += '<div onclick="contrib_modal(\''+repository.name+'\',\''+ contributor.author.login + '\',\'' + contributor.author.avatar_url +'\')" class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img>' + contributor.author.login + '</div>';
 
                 }
@@ -81,8 +81,10 @@ jQuery.fn.extend({
 
           }
         });
+        
       }
     });
+    
   },
   loadallteam: function() {
     $container = this;
