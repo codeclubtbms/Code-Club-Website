@@ -41,6 +41,8 @@ jQuery.fn.extend({
       crossDomain: true,
       dataType: 'json',
       success: function(myData) {
+        if(!loadAll) myData = shuffle(myData);
+        else myData = myData.reverse();
         $.each(myData, function(index, repository) {
           if (index < 6 || loadAll) {
             var contributors, contrib_images = '';
@@ -131,4 +133,23 @@ function contrib_modal(project_name, contrib_name, contrib_img){
   $("#contrib_name").html(contrib_name);
   $("#contrib_img").attr('src', contrib_img);
   $("#modal_contributor").modal("open");
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
