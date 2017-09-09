@@ -79,6 +79,17 @@
       }
     },
     {
+      "name":"Abrit Pal",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Tyndale Biscoe School",
+      "social":{
+        "facebook":"abritpal.singh",
+        "twitter":"abirtpal",
+        "instagram":"abritpal"
+      }
+    },
+    {
       "name": "Alia Imtiyaz",
       "joined_year":"2017",
       "roles":"",
@@ -106,87 +117,87 @@
       }
     },
     {
-    "name":"Mehvish Farooq",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "facebook":"mehvii3",
-      "instagram":"mehvii_farooq"
+      "name":"Mehvish Farooq",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "facebook":"mehvii3",
+        "instagram":"mehvii_farooq"
+      }
+    },
+    {
+      "name":"Saikunissa",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "facebook":"aanaya"
+      }
+    },
+    {
+      "name":"Taiba Aftab",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"taiba_aftab"
+      }
+    },
+    {
+      "name":"Syed Umi Fatima",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"syedumifatima"
+      }
+    },
+    {
+      "name":"Ravishta",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"ravishta_rehman"
+      }
+    },
+    {
+      "name":"Tara Hakeem",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"tarahakeem"
+      }
+    },
+    {
+      "name":"Tuba Beigh",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"tuba_beigh"
+      }
+    },
+    {
+      "name":"Shanza Nazir",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"shanza_nazer"
+      }
+    },
+    {
+      "name":"Musaib Ziya",
+      "joined_year":"2017",
+      "roles":"",
+      "school":"Mallinson Girls School",
+      "social":{
+        "instagram":"ziya__qureshi"
+      }
     }
-  },
-  {
-    "name":"Saikunissa",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "facebook":"aanaya"
-    }
-  },
-  {
-    "name":"Taiba Aftab",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"taiba_aftab"
-    }
-  },
-  {
-    "name":"Syed Umi Fatima",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"syedumifatima"
-    }
-  },
-  {
-    "name":"Ravishta",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"ravishta_rehman"
-    }
-  },
-  {
-    "name":"Tara Hakeem",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"tarahakeem"
-    }
-  },
-  {
-    "name":"Tuba Beigh",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"tuba_beigh"
-    }
-  },
-  {
-    "name":"Shanza Nazir",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"shanza_nazer"
-    }
-  },
-  {
-    "name":"Musaib Ziya",
-    "joined_year":"2017",
-    "roles":"",
-    "school":"Mallinson Girls School",
-    "social":{
-      "instagram":"ziya__qureshi"
-    }
-  }
   ],
   "social_links":{
     "facebook":{
