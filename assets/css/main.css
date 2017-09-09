@@ -12,7 +12,8 @@ body {
 	padding-bottom:70px; /* Height of the footer element */
 }
 .team_card img{
-height: 50%;
+height:	200px;
+width:	200px;
 }
 .team_card>.card-action>.fa {
   color: #607d8b !important;
