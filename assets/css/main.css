@@ -43,3 +43,7 @@ width:	200px;
 .contributions {
 	display: none;
 }
+
+.justify{
+	text-align: justify !important;
+}
