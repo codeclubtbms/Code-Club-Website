@@ -16,7 +16,6 @@ jQuery.fn.extend({
 
             sociallinks += '<a class="fa ' + json.social_links[key].fa_icon + '" style="width:' + wSocial + '%" href="' + json.social_links[key].prefix + val + '"></a>';
           });
-          console.log(sociallinks);
           $card = $('<div class="col-lg-4 col-md-6 col-12">' +
             '<div class="card medium hoverable team_card">' +
             '<div class="card-content center-align">' +
@@ -28,11 +27,11 @@ jQuery.fn.extend({
             sociallinks +
             '</div>' +
             '</div>');
-          console.log($card);
           $container.append($card);
         }
       });
     });
+    $("#team .progress").addClass("hide");
   },
   //Used to load projects 
   loadprojects: function(loadAll) {
@@ -46,7 +45,6 @@ jQuery.fn.extend({
           if (index < 6 || loadAll) {
             var contributors, contrib_images = '';
             getContributors(repository.url + EDGE_CONTRIBUTORS, function(contributors) {
-              console.log(contributors);
               $.each(contributors, function(index, contributor) {
                 if (index < 3) {
                   contrib_images += '<a href="' +contributor.author.html_url + '" target="_blank"><div class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img><span class="contributor_name">' + contributor.author.login + '</span><span class="contributions">'+getStats(contributor.weeks)+'</span>'+'</div></a>';
@@ -95,12 +93,12 @@ jQuery.fn.extend({
 
           sociallinks += '<a class="fa ' + json.social_links[key].fa_icon + '" href="' + json.social_links[key].prefix + val + '"></a>';
         });
-        console.log(sociallinks);
         $tr = $('<tr><td>' + val.name + '</td><td>' + val.joined_year + '</td><td>' + val.roles + '</td><td>' + sociallinks + '</td></tr>');
         $container.append($tr);
       });
+    
+
     });
-    $("#team .progress").addClass("hide");
 
   }
 });
@@ -129,7 +127,6 @@ function getStats(weeks) {
 }
 
 function contrib_modal(project_name, contrib_name, contrib_img){
-  console.log(project_name, contrib_name);
   $("#project_name").html(project_name);
   $("#contrib_name").html(contrib_name);
   $("#contrib_img").attr('src', contrib_img);

@@ -37,7 +37,9 @@
     <script src="/assets/js/main.js" charset="utf-8"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      $("#header").load("/header.html");
+        $("#header").load("/header.html", function(){
+            $(".button-collapse").sideNav();
+        });
         $("#footer").load("/footer.html");
         $("#projects").loadprojects(true);
 
