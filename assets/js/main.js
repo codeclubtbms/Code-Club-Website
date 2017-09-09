@@ -43,7 +43,7 @@ jQuery.fn.extend({
       dataType: 'json',
       success: function(myData) {
         $.each(myData, function(index, repository) {
-          if (index <= 9 || loadAll) {
+          if (index < 6 || loadAll) {
             var contributors, contrib_images = '';
             getContributors(repository.url + EDGE_CONTRIBUTORS, function(contributors) {
               console.log(contributors);
@@ -81,7 +81,7 @@ jQuery.fn.extend({
 
           }
         });
-        
+        $("#projects .progress").addClass("hide");
       }
     });
     
@@ -100,6 +100,8 @@ jQuery.fn.extend({
         $container.append($tr);
       });
     });
+    $("#team .progress").addClass("hide");
+
   }
 });
 
