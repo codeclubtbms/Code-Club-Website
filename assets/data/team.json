@@ -30,6 +30,7 @@
       },
       "image_url": "https://avatars3.githubusercontent.com/u/15276828?v=4",
 
+      "facebook":"abritpal.singh",
       "senior":true
     },
   
@@ -57,7 +58,8 @@
         "instagram":"mohammadshahdad",
         "github":"mohammadshahdad",
         "twitter":"moshahdad",
-        "website":"http://mohammadshahdad.com"
+        "website":"http://mohammadshahdad.com",
+        "linkedin":"mohammad-shahdad-06aa7569"
       }
     },
     {
@@ -85,12 +87,12 @@
       "roles":"",
       "school":"Tyndale Biscoe School",
       "social":{
-        "facebook":"abritpal.singh",
         "twitter":"abirtpal",
         "instagram":"abritpal"
       }
     },
     {
+      "school":"Mallinson Girls School",
       "name": "Alia Imtiyaz",
       "joined_year":"2017",
       "roles":"",
@@ -131,7 +133,6 @@
       "name":"Saikunissa",
       "joined_year":"2017",
       "roles":"",
-      "school":"Mallinson Girls School",
       "social":{
         "facebook":"aanaya"
       }
@@ -224,6 +225,10 @@
     "quora":{
       "fa_icon":"fa-quora",
       "prefix":"https://quora.com/profile/"
+    },
+    "linkedin":{
+      "fa_icon":"fa-linkedin",
+      "prefix":"https://linkedin.com/in/"
     },
     "website":{
       "fa_icon":"fa-globe",
