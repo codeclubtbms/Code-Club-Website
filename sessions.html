@@ -11,29 +11,35 @@
     <link rel="stylesheet" href="/assets/css/font-awesome.css">
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
-  <body style="min-height:100%;">
-  <div id="wrapper">
+  <body style="min-height:100vh;">
+  <div id="wrapper" class="wrapper">
     
   
   <div id="header">
     
   </div>
   <div id="content" class="container">
-    <h2>Meet our whole team</h2>
-      <table class="bordered highlight" id="team_table">
-        
-        <tr>
-          <th>Name</th>
-          <th>Joined</th>
-          <th>Positons</th>
-          <th>Find them</th>
-        </tr>
-        
+    <div class="all">
+      <h2>Sessions</h2>
+      <p>You can get the information on each of our session from here.</p>
+    
+      <table id="sessions" class="responsive-table highlight bordered">
+        <thead>
+        <td>Session Name</td>
+        <td>Delivered By</td>
+        <td>Date</td>
+      </thead>
       </table>
+    </div>
+    <div class="progress">
+  <div class="indeterminate"></div>
   </div>
-
+    <markdown id="markdown" class="specific">
+    
+    </markdown>
+  </div>
 </div>
-<div id="footer" class="footer">
+<div id="footer">
   
 </div>
     <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
@@ -41,6 +47,8 @@
     <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
     <script src="/assets/js/materialize.min.js" charset="utf-8"></script>
     <script src="/assets/js/main.js" charset="utf-8"></script>
+    <script src="/assets/js/tagdown.js" charset="utf-8"></script>
+    <script src="/assets/js/sessions.js" charset="utf-8"></script>
     <script type="text/javascript">
     $(document).ready(function(){
         $("#header").load("/header.html", function(){
