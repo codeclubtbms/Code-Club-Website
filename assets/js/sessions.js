@@ -42,7 +42,8 @@ function getSession(session_id){
       $("#markdown").load(json.url, function(data){
         markdown(function(){
           $(".progress").addClass("hide");
-          
+          $("#printButton").attr("href", json.url.replace("raw.githubusercontent.com","gitprint.com") + "?download");
+          $("#printButton").removeClass("hide");
         });
       });
     }
