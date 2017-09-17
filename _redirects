@@ -1,2 +1,2 @@
 /demo/*  https://codeclubtbms.github.io/:splat  200
-/api/* https://codeclubtbms.pythonanywhere.com/: 200
+/api/* https://codeclubtbms.pythonanywhere.com/:splat 200
