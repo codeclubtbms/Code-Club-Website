@@ -37,7 +37,7 @@ jQuery.fn.extend({
   loadprojects: function(loadAll) {
     var $container = $(this);
     $.ajax({
-      url: 'https://hackesta.pythonanywhere.com/github/orgs/codeclubtbms/repos',
+      url: 'https://codeclub.hackesta.org/api/github/orgs/codeclubtbms/repos',
       crossDomain: true,
       dataType: 'json',
       success: function(myData) {
@@ -107,7 +107,7 @@ jQuery.fn.extend({
 
 function getContributors(url, success) {
   $.ajax({
-    url: url.replace("api.github.com", "hackesta.pythonanywhere.com/github"),
+    url: url.replace("api.github.com", "codeclub.hackesta.org/api/github"),
     type: 'GET',
     crossDomain: true,
     dataType: 'json',
