@@ -1,3 +1,4 @@
 /demo/*  https://codeclubtbms.github.io/:splat  200
-/api/* https://codeclubtbms.pythonanywhere.com/:splat 200
+/api/* https://codeclubtbms.pythonanywhere.com/api/:splat 200
+/static/* https://codeclubtbms.pythonanywhere.com/static/:splat 200
 /Swimming/* https://mohammadshahdad.github.io/Swimming/:splat 200
