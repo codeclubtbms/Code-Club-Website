@@ -32,8 +32,21 @@
 
       "facebook":"abritpal.singh",
       "senior":true
-    },
-  
+    },    
+    {
+      "name":"Areeb",
+      "description":"Web Developer",
+      "joined_year":"2017",
+      "school":"Tyndale Biscoe School",
+      "roles":"",
+      "social":{
+        "facebook":"facetag",
+        "github":"areebmajeed",
+        "twitter":"hackingtag"
+      },
+      "image_url": "https://areebmajeed.me/assets/theme/images/userpic01.jpg",
+      "senior":true
+    },  
     {
       "name":"Mir Immad",
       "description":"Programmerr",
