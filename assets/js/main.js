@@ -1,7 +1,7 @@
 var EDGE_CONTRIBUTORS = '/stats/contributors',
   EDGE_LANGUAGES = '/languages',
   TOKEN = '0fd2b5dcefa201400f4376d0c7aa86d72f3ac5c8';
-  
+
 jQuery.fn.extend({
   //Used to load featured team members in index.html
   loadtopteam: function() {
@@ -33,11 +33,11 @@ jQuery.fn.extend({
     });
     $("#team .progress").addClass("hide");
   },
-  //Used to load projects 
+  //Used to load projects
   loadprojects: function(loadAll) {
     var $container = $(this);
     $.ajax({
-      url: 'https://codeclub.hackesta.org/api/github/orgs/codeclubtbms/repos?format=json',
+      url: 'https://codeclub.hackesta.org/assets/data/repos.json',
       crossDomain: true,
       dataType: 'json',
       success: function(myData) {
@@ -84,7 +84,7 @@ jQuery.fn.extend({
         $("#projects .progress").addClass("hide");
       }
     });
-    
+
   },
   loadallteam: function() {
     $container = this;
@@ -98,7 +98,7 @@ jQuery.fn.extend({
         $tr = $('<tr><td>' + val.name + '</td><td>' + val.joined_year + '</td><td>' + val.roles + '</td><td>' + sociallinks + '</td></tr>');
         $container.append($tr);
       });
-    
+
 
     });
 
