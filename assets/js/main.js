@@ -37,7 +37,7 @@ jQuery.fn.extend({
   loadprojects: function(loadAll) {
     var $container = $(this);
     $.ajax({
-      url: 'https://codeclub.hackesta.org/assets/data/repos.json',
+      url: '/assets/data/repos.json',
       crossDomain: true,
       dataType: 'json',
       success: function(myData) {
@@ -45,39 +45,39 @@ jQuery.fn.extend({
         else myData = myData.reverse();
         $.each(myData, function(index, repository) {
           if (index < 6 || loadAll) {
-            var contributors, contrib_images = '';
-            getContributors(repository.url + EDGE_CONTRIBUTORS, function(contributors) {
-              $.each(contributors, function(index, contributor) {
-                if (index < 3) {
-                  contrib_images += '<a href="' +contributor.author.html_url + '" target="_blank"><div class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img><span class="contributor_name">' + contributor.author.login + '</span><span class="contributions">'+getStats(contributor.weeks)+'</span>'+'</div></a>';
-              //  contrib_images += '<div onclick="contrib_modal(\''+repository.name+'\',\''+ contributor.author.login + '\',\'' + contributor.author.avatar_url +'\')" class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img>' + contributor.author.login + '</div>';
+            var contrib_images = '';
+            console.log(repository)
+            $.each(repository.contributors, function(index, contributor) {
+              console.log(contributor)
+              if (index < 3) {
+                contrib_images += '<a href="' +contributor.html_url + '" target="_blank"><div class="contributor chip"><img class="contrib-img" src="' + contributor.avatar_url + '"></img><span class="contributor_name">' + contributor.login + '</span><span class="contributions">'+contributor.contributions+'</span>'+'</div></a>';
+            //  contrib_images += '<div onclick="contrib_modal(\''+repository.name+'\',\''+ contributor.author.login + '\',\'' + contributor.author.avatar_url +'\')" class="contributor chip"><img class="contrib-img" src="' + contributor.author.avatar_url + '"></img>' + contributor.author.login + '</div>';
 
-                }
-              });
-
-              $card = $(
-                '<div class="col-lg-4 col-md-6 col-sm-6 col-12">' +
-                '<div class="card small hoverable project_card valign-wrapper">' +
-                '<div class="card-content center-align">' +
-                '<h5 class="activator">' + repository.name + '</h5>' +
-                '<p style="margin-bottom: 10px;">' + ((repository.description === null) ? "" : repository.description) + '</p>' +
-                contrib_images +
-                '<div class="card-action row">' +
-                '<a href="' + repository.html_url + '" target="_blank" class="col"><i class="fa fa-github"></i></a>' +
-                ((repository.homepage === null || repository.homepage === "") ? "" : '<a href="' + repository.homepage + '" target="_blank" class="col"><i class="fa fa-globe"></i></a>') +
-                 '<a class="col-1 activator"><i class="fa fa-ellipsis-v" style="margin-left: 0;"></i></a>'+
-                '</div>' +
-
-                '</div>' +
-                '<div class="card-reveal">' +
-                ' <span class="card-title grey-text text-darken-4">' + repository.name + '<i class="material-icons right">close</i></span>' +
-                '<span class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">update</i> Updated At: ' + (new Date(repository.updated_at)).toLocaleString() + '</span>' +
-                '</div>' +
-                '</div>' +
-                '</div>');
-
-              $container.append($card);
+              }
             });
+
+            $card = $(
+              '<div class="col-lg-4 col-md-6 col-sm-6 col-12">' +
+              '<div class="card small hoverable project_card valign-wrapper">' +
+              '<div class="card-content center-align">' +
+              '<h5 class="activator">' + repository.name + '</h5>' +
+              '<p style="margin-bottom: 10px;">' + ((repository.description === null) ? "" : repository.description) + '</p>' +
+              contrib_images +
+              '<div class="card-action row">' +
+              '<a href="' + repository.html_url + '" target="_blank" class="col"><i class="fa fa-github"></i></a>' +
+              ((repository.homepage === null || repository.homepage === "") ? "" : '<a href="' + repository.homepage + '" target="_blank" class="col"><i class="fa fa-globe"></i></a>') +
+               '<a class="col-1 activator"><i class="fa fa-ellipsis-v" style="margin-left: 0;"></i></a>'+
+              '</div>' +
+
+              '</div>' +
+              '<div class="card-reveal">' +
+              ' <span class="card-title grey-text text-darken-4">' + repository.name + '<i class="material-icons right">close</i></span>' +
+              '<span class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">update</i> Updated At: ' + (new Date(repository.updated_at)).toLocaleString() + '</span>' +
+              '</div>' +
+              '</div>' +
+              '</div>');
+
+            $container.append($card);
 
           }
         });
@@ -105,18 +105,6 @@ jQuery.fn.extend({
   }
 });
 
-function getContributors(url, success) {
-  $.ajax({
-    url: url.replace("api.github.com", "codeclub.hackesta.org/api/github"),
-    type: 'GET',
-    crossDomain: true,
-    dataType: 'json',
-    success: function(myData) {
-      success(myData);
-
-    }
-  });
-}
 
 function getStats(weeks) {
   additions = 0;
