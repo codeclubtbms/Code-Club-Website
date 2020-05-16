@@ -10,11 +10,14 @@
         {
           "facebook": "haiderali176",
           "instagram":"haideralipunjabi",
+          "twitter":"HAliPunjabi",
           "github":"haideralipunjabi",
           "500px":"haideralipunjabi",
-          "website":"https://hackesta.org"
+          "website":"https://haideralipunjabi.com",
+          "website2":"https://hackesta.org",
+          "linkedin":"haideralipunjabi"
         },
-        "image_url": "https://hackesta.org/assets/media/profile.png",
+        "image_url": "https://haideralipunjabi.com/assets/media/profile.jpg",
         "senior": true
     },
     {
@@ -244,6 +247,10 @@
       "prefix":"https://linkedin.com/in/"
     },
     "website":{
+      "fa_icon":"fa-globe",
+      "prefix":""
+    },
+    "website2":{
       "fa_icon":"fa-globe",
       "prefix":""
     }

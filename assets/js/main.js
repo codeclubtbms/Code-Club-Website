@@ -13,7 +13,7 @@ jQuery.fn.extend({
           var sociallinks = "";
           wSocial = 100 / Object.keys(val.social).length;
           $.each(val.social, function(key, val) {
-
+            
             sociallinks += '<a class="fa ' + json.social_links[key].fa_icon + '" style="width:' + wSocial + '%" href="' + json.social_links[key].prefix + val + '"></a>';
           });
           $card = $('<div class="col-lg-4 col-md-6 col-12">' +
